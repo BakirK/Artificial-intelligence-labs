@@ -1,0 +1,18 @@
+kabanica
+    foreach
+    vrijeme.kisa($rain)
+    vrijeme.vjetar($wind)
+    assert
+    vrijeme.ponijeti(kabanica)
+kisobran
+    foreach
+    vrijeme.kisa($rain)
+    vrijeme.vjetar(False)
+    assert
+    vrijeme.ponijeti(kisobran)
+nista
+    foreach
+    vrijeme.kisa(False)
+    vrijeme.vjetar(False)
+    assert
+    vrijeme.ponijeti(nista)
