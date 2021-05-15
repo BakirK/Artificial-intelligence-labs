@@ -1,18 +1,18 @@
-kabanica
+kabanicu
     foreach
-    vrijeme.kisa($rain)
-    vrijeme.vjetar($wind)
+    	vrijeme.kisa($rain)
+    	vrijeme.vjetar($wind)
     assert
-    vrijeme.ponijeti(kabanica)
+    	vrijeme.ponijeti(kabanicu)
 kisobran
     foreach
-    vrijeme.kisa($rain)
-    vrijeme.vjetar(False)
+    	vrijeme.kisa($rain)
+    	vrijeme.vjetar(False)
     assert
-    vrijeme.ponijeti(kisobran)
+    	vrijeme.ponijeti(kisobran)
 nista
     foreach
-    vrijeme.kisa(False)
-    vrijeme.vjetar(False)
+    	vrijeme.kisa(False)
+    	vrijeme.vjetar(False)
     assert
-    vrijeme.ponijeti(nista)
+    	vrijeme.ponijeti(nista)
