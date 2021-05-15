@@ -1,0 +1,21 @@
+kisobran
+    foreach
+    vrijeme.pada_kisa($rain)
+    vrijeme.puse_vjetar($value)
+    check $wind != 'True'
+    assert
+    vrijeme.ponijeti($rain, $wind, kisobran)
+nista
+    foreach
+    vrijeme.pada_kisa($rain)
+    vrijeme.puse_vjetar($value)
+    check $wind != 'True'
+    check $rain != 'True'
+    assert
+    vrijeme.ponijeti($rain, $wind, nista)
+kabanica
+    foreach
+    vrijeme.pada_kisa($rain)
+    vrijeme.puse_vjetar($wind)
+    assert
+    vrijeme.ponijeti($rain, $wind, kabanica)
