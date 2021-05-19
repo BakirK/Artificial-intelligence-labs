@@ -5,20 +5,20 @@ from pyke import knowledge_engine, krb_traceback, goal
 
 # Compile and load .krb files in same directory that I'm in (recursively).
 engine = knowledge_engine.engine(__file__)
-# $ je izlazna varijabla
-fc_goal = goal.compile('vrijeme.ponijeti($rain, $wind, $ponijeti)')
 
-def staPonijeti(rain, wind):
-    print(rain)
-    print(wind)
+fc_goal = goal.compile('vrijeme.ponijeti($kisa, $vjetar, $ponijeti)')
+
+def staPonijeti(k, v):
+    print('kisa:' + k)
+    print('vjetar:' + v)
     engine.reset()      # Allows us to run tests multiple times.
 
     engine.activate('kisa')
     print("doing proof")
-    with fc_goal.prove(engine, rain=rain, wind=wind) as gen:
+    with fc_goal.prove(engine, kisa=k, vjetar=v) as gen:
         for vars, plan in gen:
-            print("Trebate ponijeti: %s" %
-                  (vars['ponijeti']))
+            print("Trebate ponijeti: %s" % (vars['ponijeti']))
+    engine.print_stats()
     print()
     print("done")
-    # engine.print_stats()
+    

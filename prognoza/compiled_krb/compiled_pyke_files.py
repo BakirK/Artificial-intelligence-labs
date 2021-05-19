@@ -14,9 +14,9 @@ except NameError:
 def get_target_pkg():
     return target_pkg.target_pkg(__name__, __file__, pyke_version, loader, {
          ('', '', 'kisa.krb'):
-           [1621112112.8804228, 'kisa_fc.py'],
+           [1621451324.4089203, 'kisa_fc.py'],
          ('', '', 'vrijeme.kfb'):
-           [1621112112.8844194, 'vrijeme.fbc'],
+           [1621451324.419919, 'vrijeme.fbc'],
         },
         compiler_version)
 
