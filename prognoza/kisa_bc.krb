@@ -1,0 +1,20 @@
+kabanicu
+    use ponijeti($kisa, $vjetar, kabanicu)
+    when
+        vrijeme.kisa($kisa)
+        vrijeme.vjetar($vjetar)
+kisobran
+    use ponijeti($kisa, $vjetar, kisobran)
+    when
+        vrijeme.kisa($kisa)
+        check $vjetar in (False,)
+nista
+    use ponijeti($kisa, $vjetar, nista)
+    when
+        check $kisa in (False,)
+        check $vjetar in (False,)
+vjetrovka
+    use ponijeti($kisa, $vjetar, vjetrovku)
+    when
+        check $vjetar in (False,)
+        vrijeme.vjetar($vjetar)
