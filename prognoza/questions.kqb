@@ -1,0 +1,17 @@
+# questions.kqb
+
+pada_kisa($ans)
+    Da li pada kisa?
+    ---
+    $ans = yn
+puse_vjetar($ans)
+    Da li puse vjetar?
+    ---
+    $ans = yn
+katastrofa($ans)
+    Koja katastrofa je trenutno vani?
+    ---
+    $ans = select_1
+        1: Poplava
+        2: It's Corona timeee y'all
+        3: Nista od ponudjenog

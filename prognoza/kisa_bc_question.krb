@@ -1,0 +1,35 @@
+kabanicu
+    use ponijeti(kabanicu)
+    when
+        questions.pada_kisa(True)
+        questions.puse_vjetar(True)
+kisobran
+    use ponijeti(kisobran)
+    when
+        questions.pada_kisa(True)
+        questions.puse_vjetar(False)
+nista
+    use ponijeti(nista)
+    when
+        questions.pada_kisa(False)
+        questions.puse_vjetar(False)
+vjetrovka
+    use ponijeti(vjetrovku)
+    when
+        questions.pada_kisa(False)
+        questions.puse_vjetar(True)
+cizme
+    use dodatno(cizme)
+    when
+        questions.katastrofa($ans)
+        check $ans in (1,)
+maska
+    use dodatno(maska)
+    when
+        questions.katastrofa($ans)
+        check $ans in (2,)
+nistaDodatno
+    use dodatno(nistaDodatno)
+    when
+        questions.katastrofa($ans)
+        check $ans in (3,)

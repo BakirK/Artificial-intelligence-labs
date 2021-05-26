@@ -14,11 +14,15 @@ except NameError:
 def get_target_pkg():
     return target_pkg.target_pkg(__name__, __file__, pyke_version, loader, {
          ('', '', 'kisa.krb'):
-           [1621532020.2833755, 'kisa_fc.py'],
+           [1622051553.337224, 'kisa_fc.py'],
          ('', '', 'kisa_bc.krb'):
-           [1621532020.288376, 'kisa_bc_bc.py'],
+           [1622051553.3512182, 'kisa_bc_bc.py'],
+         ('', '', 'kisa_bc_question.krb'):
+           [1622051553.3762152, 'kisa_bc_question_bc.py'],
+         ('', '', 'questions.kqb'):
+           [1622051553.3961868, 'questions.qbc'],
          ('', '', 'vrijeme.kfb'):
-           [1621532020.293376, 'vrijeme.fbc'],
+           [1622051553.4021854, 'vrijeme.fbc'],
         },
         compiler_version)
 
